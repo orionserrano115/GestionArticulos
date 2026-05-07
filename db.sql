@@ -1,8 +1,9 @@
+-- Crear base de datos
 
 
--- Crear tabla de artículos con campo created_at
+-- Crear tabla de artículos con autoincremento y created_at
 CREATE TABLE articulos (
-    codigo VARCHAR(50) PRIMARY KEY,
+    codigo INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(100) NOT NULL,
     marca VARCHAR(100) NOT NULL,
     cantidad INT NOT NULL,
